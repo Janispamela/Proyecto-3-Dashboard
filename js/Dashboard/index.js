@@ -1,6 +1,14 @@
 const ctx = document.getElementById("ctx").getContext("2d");
 
+const obtenerIndicadores = async () => {
+      const response = await fetch("https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json");
+      const json = await response.json();
+      console.log(json);
+    };
+
 const pintarGrafica= () => {
+
+            
     new Chart(ctx, {
         type: "bar", // line, pie, bar, radar, doughnut
         data: {
@@ -36,4 +44,4 @@ const pintarGrafica= () => {
       });
     };
     
-window.addEventListener("load", pintarGrafica);
+window.addEventListener("load", obtenerIndicadores);
