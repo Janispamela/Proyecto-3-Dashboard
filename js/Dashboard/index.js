@@ -3,20 +3,25 @@ const ctx = document.getElementById("ctx").getContext("2d");
 const obtenerIndicadores = async () => {
       const response = await fetch("https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=16758");
       const json = await response.json();
-      console.log(json);
+      console.log(json[1]);
+
+      pintarGrafica(json[1])
     };
 
-const pintarGrafica= () => {
-
-            
+const pintarGrafica = (indicadoresArray) => {
+      console.log(indicadoresArray) 
+      
+      
+      const paises = ["Mexico", "Argentina", "Brasil", "USA", "India", "Canada"]
+      const indicadores = [3.31, 6.49, 9.46, 3.61, 7.33, 5.21]
     new Chart(ctx, {
         type: "bar", // line, pie, bar, radar, doughnut
         data: {
-          labels: ["Mexico", "Argentina", "Brasil", "USA", "India", "Canada"], // eje x
+          labels: paises, // eje x
           datasets: [
             {
               label: "Unemployment, total (% of total labor force)",
-              data: [3.31, 6.49, 9.46, 3.61, 7.33, 5.21], // eje y (Unemployment)
+              data: indicadores, // eje y (Unemployment)
               borderWidth: 1,
               backgroundColor: ["#36a2eb", "#36a2eb", "#36a2eb", "#36a2eb"],
             },
