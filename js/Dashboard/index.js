@@ -11,9 +11,17 @@ const obtenerIndicadores = async () => {
 const pintarGrafica = (indicadoresArray) => {
       console.log(indicadoresArray) 
       
+      const paises = indicadoresArray.map((pais) => {
+        return pais.country.value;
+      });
+      const indicadores = indicadoresArray.map((pais) => {
+        return pais.indicator.value;
+      });
+
       
-      const paises = ["Mexico", "Argentina", "Brasil", "USA", "India", "Canada"]
-      const indicadores = [3.31, 6.49, 9.46, 3.61, 7.33, 5.21]
+//      const paises = ["Mexico", "Argentina", "Brasil", "USA", "India", "Canada"]
+//      const indicadores = [3.31, 6.49, 9.46, 3.61, 7.33, 5.21]
+
     new Chart(ctx, {
         type: "bar", // line, pie, bar, radar, doughnut
         data: {
