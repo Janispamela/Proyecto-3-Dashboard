@@ -4,17 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto 3 - Dashboard</title>
-</head>
-<link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
 <body>
     <header>
-        <h1>Dashboard</h1>
-    </header>
+        <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <span class="material-symbols-outlined">
+            query_stats
+            </span>
+            Global Employment and Urban Development Trends from the World Bank
+    </a>
+  </div>
+</nav>
+        </header>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col">
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Recent trends</h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Urbanization</h6>
+                      <p class="card-text">A majority and growing proportion of the world’s population is living in urban areas. The share of the world’s population living in urban areas is expected to increase from 55% in 2018 to 60% in 2030 (UN, 2018). More than 50 years ago, 30% of the global population was living in urban areas. 
+
+                        In 2018, Northern America was the most urbanized region in the world, with 82% of its population living in urban areas. This was followed by Latin America and the Caribbean (81%), Europe (74%) and Oceania (68%) (UN, 2018). The lowest levels of urbanization are found in Asia (50%) and Africa (43% ), however with large differences among some countries. </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <select class="form-select" id="selectYear">
+                    <option selected>Select Year</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                  <select class="form-select" id="selectCountry">
+                    <option selected>Select Country</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+            </div>
+        </div>
+    </div>
+
+   
     <main>
         <canvas id="ctx">
 
         </canvas>
     </main>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/Dashboard/index.js"></script>
 </body>

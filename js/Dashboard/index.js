@@ -1,7 +1,7 @@
 const ctx = document.getElementById("ctx").getContext("2d");
 
 const obtenerIndicadores = async () => {
-      const response = await fetch("https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json");
+      const response = await fetch("https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?format=json&per_page=16758");
       const json = await response.json();
       console.log(json);
     };
