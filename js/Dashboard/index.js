@@ -15,7 +15,7 @@ const pintarGrafica = (indicadoresArray) => {
         return pais.country.value;
       });
       const indicadores = indicadoresArray.map((pais) => {
-        return pais.indicator.value;
+        return pais.value;
       });
 
       

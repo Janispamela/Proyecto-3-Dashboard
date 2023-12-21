@@ -1,7 +1,18 @@
-const Year = document.getElementById("selectYear")
-const Country = document.getElementById("selectCountry")
+const Year = document.getElementById("selectYear");
+const Country = document.getElementById("selectCountry");
 
-const filterby = () => {
-    const yearOption = selectYear.options[selectYear.selectedIndex];
-    const countryOption = selectOption.options[selectOption.selectedIndex];
+const filterbyrange = () => {
+console.log("filterby")
 }
+    /*const yearOption = Year.value;
+    const countryOption = Country.value;
+
+    const filteredData = indicadoresArray.filter((data) => {
+        return data.date === yearOption && data.country.value === countryOption;
+      });
+    
+      return filteredData;
+    }/*
+
+
+  
