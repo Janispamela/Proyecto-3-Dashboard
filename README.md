@@ -1,6 +1,6 @@
 # World Bank Urbanization Dashboard
 
-This project is a dashboard displaying global urbanization trends using data from the World Bank. The dashboard provides insights into the urban population's percentage of the total population, covering the years from 1960 to 2022.
+This project is a dashboard displaying global urbanization trends using data from the World Bank. The dashboard provides insights into the urban population's percentage of the total population, covering the years from 1960 to 2022. The data is sourced from the World Bank API.
 
 ## Overview
 
@@ -14,10 +14,6 @@ The dashboard consists of two main sections:
    - Features an interactive chart illustrating the urban population percentage for selected countries.
    - Allows users to choose a specific country from the dropdown menu.
    - Utilizes Chart.js to create a dynamic representation of the data.
-
-## Data Source
-
-The data is sourced from the World Bank, and the chart is embedded using the World Bank's data sharing widget.
 
 ## How to Use
 
@@ -37,6 +33,14 @@ The data is sourced from the World Bank, and the chart is embedded using the Wor
 - [World Bank Data URL](https://data.worldbank.org/)
 - [API for Urban Development (SP.URB.TOTL.IN.ZS) provided by the World Bank Data] (https://api.worldbank.org/v2/country/all/indicator/SP.URB.TOTL.IN.ZS?format=json)
 - [World Bank Data Sharing Widget](https://data.worldbank.org/share/widget?end=2022&indicators=SP.URB.TOTL.IN.ZS&start=1960&view=map)
+
+## Technologies Used
+- HTML and Bootstrap
+- CSS
+- JavaScript
+- Chart.js
+- World Bank API
+- Google Fonts API 
 
 ## Credits
 
