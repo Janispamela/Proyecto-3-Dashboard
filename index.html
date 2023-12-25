@@ -34,24 +34,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="row mt-3 align-items-start">
-                        <div class="col">
-                            <select class="btn btn-success dropdown-toggle" id="selectCountry">
-                                <option value="nooption" selected>Select Country</option>
-                            </select>
-                        </div>
+                <div class="col d-flex align-items-stretch">
+                    <div class="ratio ratio-16x9 h-100">
+                        <iframe src="https://data.worldbank.org/share/widget?end=2022&indicators=SP.URB.TOTL.IN.ZS&start=1960&view=map" title="Urban population (% of total population) 2022" width='500' height='100%' frameBorder='0' scrolling="no"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         
-    
-      <main>
-          <canvas id="ctx" width="500" height="400">
+        <div class="col">
+            <div class="row mt-3">
+                <div class="col">
+                    <select class="btn dropdown-toggle" id="selectCountry">
+                        <option value="nooption" selected>Select Country</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <main>
+                        <canvas id="ctx" width="500" height="150"></canvas>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-          </canvas>
-      </main>
     <footer class="bg-dark text-light text-center py-3 mt-5">
            © 2023 Janis Cardenas. Esta es una página ficticia para fines académicos. Todos los derechos reservados.
     </footer>

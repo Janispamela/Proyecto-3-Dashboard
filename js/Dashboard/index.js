@@ -3,7 +3,7 @@ const ctx = document.getElementById("ctx").getContext("2d");
 
 const fetchData = async () => {
   try {
-    const response = await fetch('https://api.worldbank.org/v2/country?format=json&per_page=500');
+    const response = await fetch('https://api.worldbank.org/v2/country?format=json&per_page=16758');
     const data = await response.json();
 
     const selectCountry = document.getElementById('selectCountry');
@@ -33,7 +33,7 @@ const fetchUrbanData = async () => {
 
 
 const drawChart = (urbanValuesArray) => {
-  console.log(urbanValuesArray);
+//  console.log(urbanValuesArray);
 
   const sortedData = urbanValuesArray
   .sort((a, b) => a.date - b.date);
