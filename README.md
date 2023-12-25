@@ -31,7 +31,6 @@ The dashboard consists of two main sections:
 ## External Links
 
 - [World Bank Data URL](https://data.worldbank.org/)
-- [API for Urban Development (SP.URB.TOTL.IN.ZS) provided by the World Bank Data] (https://api.worldbank.org/v2/country/all/indicator/SP.URB.TOTL.IN.ZS?format=json)
 - [World Bank Data Sharing Widget](https://data.worldbank.org/share/widget?end=2022&indicators=SP.URB.TOTL.IN.ZS&start=1960&view=map)
 
 ## Technologies Used
